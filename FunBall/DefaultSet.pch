@@ -1,0 +1,143 @@
+//
+//  DefaultSet.pch
+//  ZHMoneyClient
+//
+//  Created by zhph on 2017/6/21.
+//  Copyright © 2017年 正和普惠. All rights reserved.
+//
+
+#ifndef DefaultSet_pch
+#define DefaultSet_pch
+#import"ImportFile.h"
+
+/********************身份证扫描 以及人脸识别******************/
+
+#define ACCOUNT_API_ID @"226a5dd8dc9649eb9099068672633974"
+#define ACCOUNT_API_SECRET @"163c0f7e558e4013a7dea3e15e17b011"
+
+
+#define  Talking_API_ID @"37D1857B35D94AD5A333EAD2786BA99F"
+
+#define Baidu_Tongji_ID @"5a272d9349"
+
+/********************用户数据*******************/
+#define StepCount @"StepCount"
+//用户名
+#define UserName @"UserName"
+//用户ID
+#define UserId @"UserId"
+//用户手机号
+#define Phone @"Phone"
+//用户ID
+#define UserId @"UserId"
+//人脸认证状态
+#define Face_State @"Face_State"
+//身份认证状态
+#define Auth_State @"Auth_State"
+
+//推送token
+#define DeviceToken @"DeviceToken"
+
+//推送的个数
+#define Push_count @"Push_count"
+/********************友盟推送******************/
+
+#define PUSH_API_ID @"59843d479f06fd70c0000141"
+#define PUSH_API_SECRET @"wp68demj9qsxyeuymlsbgmw5d9x9knd5"
+
+
+//版本信息
+#define IOS8AndLater [[[UIDevice currentDevice] systemVersion] floatValue]>=8
+#define StatusBarHeight  [[UIApplication sharedApplication] statusBarFrame].size.height
+
+/****上传修改的东西
+ 1、URL
+ 2、通讯录打开
+ 3、同盾设备指纹
+ 4.友盟 百度统计 talkingData
+ 5.关闭友盟推送日志打印
+ ***/
+
+//发布版本
+//# define  UD_URL_HOME @"http://61.188.178.208:80/"
+
+
+//本地的域名 中伟的服务器
+//# define  UD_URL_HOME @"http://192.168.3.74:8081/"
+
+//本地的域名  志辉的服务器
+//# define  UD_URL_HOME @"http://192.168.3.133:8080/"
+
+/**
+ *  UAT的服务器
+ */
+# define  UD_URL_HOME @"http://182.150.20.24:10033/"
+
+//注册协议
+# define Register_Protocol UD_URL_HOME@"ZHYQWeb/H5Pages/register_protocol/register_protocol.html"
+//授权中心
+# define Register_Help UD_URL_HOME@"ZHYQWeb/H5Pages/help_center/details.html?&data_num=4"
+
+
+/******************颜色相关的****************/
+
+
+//RGB颜色设置
+#define kSetUpCololor(RED,GREEN,BLUE,ALPHA) [UIColor colorWithRed:RED/255.0 green:GREEN/255.0 blue:BLUE/255.0 alpha:ALPHA]
+
+//16进制颜色设置
+#define UIColorWithRGB(rgbValue, alphaValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0x00FF00) >> 8))/255.0 blue:((float)(rgbValue & 0x0000FF))/255.0 alpha:alphaValue]
+
+#define ZHLineColor       UIColorWithRGB(0xdadada,1.0) //线的颜色
+#define ZHThemeColor      UIColorWithRGB(0xc8a064,1.0) //主题色
+#define ZHBackgroundColor UIColorWithRGB(0xefeff3,1.0)//底灰
+#define ZHSubTitleColor   UIColorWithRGB(0x676767,1.0) //子标题的颜色
+#define ZHBtnColor   UIColorWithRGB(0xcba064,1.0) //按钮标题的颜色
+#define ZHClearColor   [UIColor clearColor] //透明色
+#define ZHTitleColor  kSetUpCololor(30,30,30,1.0)
+
+/********************屏幕宽和高*******************/
+#define ZHScreenW [UIScreen mainScreen].bounds.size.width
+#define ZHScreenH [UIScreen mainScreen].bounds.size.height
+
+
+//window窗口
+#define kWindow [UIApplication sharedApplication].keyWindow
+
+
+//根据屏幕宽度计算对应View的高
+#define ZHFit(value) ((value * ZHScreenW) / 375.0f)
+
+/********************字体适配*******************/
+#define ZHFont_Title ZHFontSize(15.0)
+#define ZHFont_Detitle ZHFontSize(14.0)
+#define ZHFont_BtnTitle ZHFontSize(18.0)
+#define ZHFont_Middle ZHFontSize(16.0)
+#define ZHFont_default ZHFontSize(17.0)
+#define ZHFont_small ZHFontSize(12.0)
+
+/**字体*/
+#define ZHFontSize(x) [UIFont systemFontOfSize:(ZHScreenW > 374 ? (ZHScreenW > 375 ? x * 1.1 : x ) : x / 1.1)]
+
+#define ZHFontLineSize(x) [UIFont systemFontOfSize:(ZHScreenW > 374 ? (CGFloat)x  : (CGFloat)x / 1.1) weight:UIFontWeightThin]
+
+#define ZHFontBold(x) [UIFont systemFontOfSize:(ZHScreenW > 374 ? (CGFloat)x  : (CGFloat)x / 1.1) weight:UIFontWeightBold]
+
+/**加粗字体*/
+#define ZHFontBoldSize(x) [UIFont boldSystemFontOfSize:(ZHScreenW > 374 ? (CGFloat)x  : (CGFloat)x / 1.1)]
+
+/********************数据的判断处理*******************/
+/**判断字符串是否为空*/
+#define NULLString(string) ((string == nil) ||[string isEqualToString:@""] ||([string length] == 0)  || [string isKindOfClass:[NSNull class]] || [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] == 0 ||[string isEqual:[NSNull null]])
+
+//版本号
+#define  KVersion [[[NSBundle mainBundle] infoDictionary]objectForKey:@"CFBundleShortVersionString"]
+
+//数组是否为空
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+//字典是否为空
+#define kDictIsEmpty(dic) (dic == nil || ![dic isKindOfClass:[NSDictionary class]] || dic.allKeys == 0)
+
+
+
+#endif /* DefaultSet_pch */
