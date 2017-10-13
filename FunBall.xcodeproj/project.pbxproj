@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		44DB1CE33640F2FFDE094FC4 /* libPods-FunBall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DE508EAD581FA3EBC8481C6 /* libPods-FunBall.a */; };
+		46679FAD1F90BF5C00406A19 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 46679FAC1F90BF5C00406A19 /* news.json */; };
+		46679FB51F90C13300406A19 /* ZHNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46679FB41F90C13300406A19 /* ZHNewsCell.m */; };
+		46679FB81F90C20E00406A19 /* ZHNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46679FB71F90C20E00406A19 /* ZHNewsModel.m */; };
+		468599C01F909A1900363AAE /* zu3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 468599BC1F909A1800363AAE /* zu3.jpg */; };
+		468599C11F909A1900363AAE /* zu2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 468599BD1F909A1800363AAE /* zu2.jpg */; };
+		468599C21F909A1900363AAE /* zu4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 468599BE1F909A1800363AAE /* zu4.jpg */; };
+		468599C31F909A1900363AAE /* zu1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 468599BF1F909A1900363AAE /* zu1.jpg */; };
 		46D14BC11F8F4016003297D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D14BC01F8F4016003297D9 /* main.m */; };
 		46D14BC41F8F4016003297D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D14BC31F8F4016003297D9 /* AppDelegate.m */; };
 		46D14BC71F8F4016003297D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D14BC61F8F4016003297D9 /* ViewController.m */; };
@@ -71,6 +78,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46679FAC1F90BF5C00406A19 /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		46679FB31F90C13300406A19 /* ZHNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNewsCell.h; sourceTree = "<group>"; };
+		46679FB41F90C13300406A19 /* ZHNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNewsCell.m; sourceTree = "<group>"; };
+		46679FB61F90C20E00406A19 /* ZHNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNewsModel.h; sourceTree = "<group>"; };
+		46679FB71F90C20E00406A19 /* ZHNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNewsModel.m; sourceTree = "<group>"; };
+		468599BC1F909A1800363AAE /* zu3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zu3.jpg; sourceTree = "<group>"; };
+		468599BD1F909A1800363AAE /* zu2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zu2.jpg; sourceTree = "<group>"; };
+		468599BE1F909A1800363AAE /* zu4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zu4.jpg; sourceTree = "<group>"; };
+		468599BF1F909A1900363AAE /* zu1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = zu1.jpg; sourceTree = "<group>"; };
 		46D14BBC1F8F4016003297D9 /* FunBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46D14BC01F8F4016003297D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		46D14BC21F8F4016003297D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -194,6 +210,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46679FAE1F90C0A000406A19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46679FB31F90C13300406A19 /* ZHNewsCell.h */,
+				46679FB41F90C13300406A19 /* ZHNewsCell.m */,
+				46679FB61F90C20E00406A19 /* ZHNewsModel.h */,
+				46679FB71F90C20E00406A19 /* ZHNewsModel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46679FAF1F90C0AC00406A19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46679FB01F90C0C400406A19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46679FB11F90C0D500406A19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46679FB21F90C0DA00406A19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		468599BA1F9099F700363AAE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				468599BB1F909A0200363AAE /* banner */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		468599BB1F909A0200363AAE /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				468599BF1F909A1900363AAE /* zu1.jpg */,
+				468599BD1F909A1800363AAE /* zu2.jpg */,
+				468599BC1F909A1800363AAE /* zu3.jpg */,
+				468599BE1F909A1800363AAE /* zu4.jpg */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
 		46D14BB31F8F4016003297D9 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +293,7 @@
 		46D14BBE1F8F4016003297D9 /* FunBall */ = {
 			isa = PBXGroup;
 			children = (
+				468599BA1F9099F700363AAE /* Source */,
 				46D14C031F8F520D003297D9 /* Util */,
 				46D14BF51F8F4D7C003297D9 /* Main */,
 				46D14BF41F8F4CFD003297D9 /* Find */,
@@ -239,6 +314,7 @@
 		46D14BBF1F8F4016003297D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46679FAC1F90BF5C00406A19 /* news.json */,
 				46D14C011F8F5094003297D9 /* ImportFile.h */,
 				46D14C021F8F509D003297D9 /* DefaultSet.pch */,
 				46D14BFF1F8F508C003297D9 /* Foundation+Log.m */,
@@ -268,6 +344,8 @@
 		46D14BF21F8F4CA9003297D9 /* home */ = {
 			isa = PBXGroup;
 			children = (
+				46679FAF1F90C0AC00406A19 /* Controller */,
+				46679FAE1F90C0A000406A19 /* View */,
 				46D14CBA1F8F5237003297D9 /* ZHHomeViewController.h */,
 				46D14CBB1F8F5237003297D9 /* ZHHomeViewController.m */,
 			);
@@ -277,6 +355,8 @@
 		46D14BF31F8F4CB3003297D9 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				46679FB21F90C0DA00406A19 /* View */,
+				46679FB01F90C0C400406A19 /* Controller */,
 				46D14CC01F8F5362003297D9 /* ZHMeViewController.h */,
 				46D14CC11F8F5362003297D9 /* ZHMeViewController.m */,
 			);
@@ -286,6 +366,7 @@
 		46D14BF41F8F4CFD003297D9 /* Find */ = {
 			isa = PBXGroup;
 			children = (
+				46679FB11F90C0D500406A19 /* View */,
 				46D14CC31F8F537A003297D9 /* ZHFindViewController.h */,
 				46D14CC41F8F537A003297D9 /* ZHFindViewController.m */,
 			);
@@ -561,8 +642,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				468599C31F909A1900363AAE /* zu1.jpg in Resources */,
+				468599C01F909A1900363AAE /* zu3.jpg in Resources */,
+				46679FAD1F90BF5C00406A19 /* news.json in Resources */,
 				46D14BCF1F8F4016003297D9 /* LaunchScreen.storyboard in Resources */,
+				468599C21F909A1900363AAE /* zu4.jpg in Resources */,
 				46D14BCC1F8F4016003297D9 /* Assets.xcassets in Resources */,
+				468599C11F909A1900363AAE /* zu2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +815,7 @@
 				46D14CB21F8F520D003297D9 /* UIView+CLKeyboardOffsetView.m in Sources */,
 				46D14C861F8F520D003297D9 /* UZAddressPhoneModel.m in Sources */,
 				46D14CA71F8F520D003297D9 /* NetWorkStatus.m in Sources */,
+				46679FB51F90C13300406A19 /* ZHNewsCell.m in Sources */,
 				46D14CB91F8F520D003297D9 /* CLocationManager.m in Sources */,
 				46D14BC71F8F4016003297D9 /* ViewController.m in Sources */,
 				46D14CB41F8F520D003297D9 /* User.m in Sources */,
@@ -738,6 +825,7 @@
 				46D14CB81F8F520D003297D9 /* ZHStringFilterTool.m in Sources */,
 				46D14CA81F8F520D003297D9 /* Reachability.m in Sources */,
 				46D14C841F8F520D003297D9 /* ZHDotButton.m in Sources */,
+				46679FB81F90C20E00406A19 /* ZHNewsModel.m in Sources */,
 				46D14CAD1F8F520D003297D9 /* UIImage+Extension.m in Sources */,
 				46D14CB11F8F520D003297D9 /* UITextField+Extension.m in Sources */,
 				46D14CA91F8F520D003297D9 /* NSString+Extension.m in Sources */,
@@ -849,7 +937,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -892,7 +980,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

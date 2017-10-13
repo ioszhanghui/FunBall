@@ -83,12 +83,12 @@
 //创建tableView
 - (void)setupTableView{
     
-    UITableView *tableView = [UITableView initWithGroupTableView:self.view.bounds withDelegate:self];
+    UITableView *tableView = [UITableView initWithGroupTableView:CGRectMake(0, 0, ZHScreenW, ZHScreenH-64) withDelegate:self];
     self.tableView = tableView;
     tableView.sectionHeaderHeight = 0.01;
     tableView.sectionFooterHeight=ZHFit(10);
     tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    tableView.separatorColor=UIColorWithRGB(0xdadada, 1.0);
+    tableView.separatorColor=UIColorWithRGB(0xe8e8e8, 1.0);
     tableView.backgroundColor = ZHBackgroundColor;
     [self.view addSubview:tableView];    
     //去掉头部留白
